@@ -48,7 +48,9 @@ const Login = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 bg-white rounded shadow-md">
-        <h1 className="text-1xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400">Login with YourPrintify</h1>
+        <h1 className="text-1xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400">
+        Login with Jaiswal Offset
+        </h1>
         <form onSubmit={handleSubmit}>
           {/* Email input */}
           <div className="mb-4">
