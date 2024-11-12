@@ -18,7 +18,7 @@ const VerifyEmail = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:4000/api/users/verify-otp", {
+      const response = await fetch("https://custom-shop-1.onrender.com/api/users/verify-otp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

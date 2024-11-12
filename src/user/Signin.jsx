@@ -23,7 +23,7 @@ const Login = () => {
     setFormData((prevData) => ({ ...prevData, loading: true, error: '' })); // Set loading state and reset error
 
     try {
-      const response = await axios.post('http://localhost:4000/api/users/login', {
+      const response = await axios.post('https://custom-shop-1.onrender.com/api/users/login', {
         email: formData.email,
         password: formData.password
       });
