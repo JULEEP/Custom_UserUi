@@ -47,48 +47,44 @@ const Register = () => {
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <ToastContainer />
       <div className="w-full max-w-md p-8 bg-white rounded shadow-md">
-        <h1 className="text-1xl font-bold text-center mb-4">Sign Up with Jaiswal Offset</h1>
+        <h1 className="text-1xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400">
+          Sign Up with Jaiswal Offset
+        </h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="fullName" className="block text-gray-700">
-              Full Name
-            </label>
+            <label htmlFor="fullName" className="block text-gray-700">Full Name</label>
             <input
               type="text"
               name="fullName"
               value={formData.fullName}
               onChange={handleChange}
-              className="w-full px-3 py-2 mt-1 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your full name"
               required
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700">
-              Email
-            </label>
+            <label htmlFor="email" className="block text-gray-700">Email</label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 mt-1 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your email"
               required
             />
           </div>
 
           <div className="mb-6">
-            <label htmlFor="password" className="block text-gray-700">
-              Password
-            </label>
+            <label htmlFor="password" className="block text-gray-700">Password</label>
             <input
               type="password"
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-3 py-2 mt-1 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your password"
               required
             />
@@ -96,7 +92,7 @@ const Register = () => {
 
           <button
             type="submit"
-            className="w-full bg-green-600 text-white font-semibold py-2 rounded hover:bg-blue-700 transition duration-200"
+            className="w-32 py-2 mx-auto bg-black text-white font-semibold rounded-full hover:bg-gray-800 transition duration-200"
           >
             Register
           </button>

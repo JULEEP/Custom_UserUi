@@ -48,7 +48,7 @@ const Login = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 bg-white rounded shadow-md">
-        <h1 className="text-1xl font-bold text-center mb-4">Login with YourPrintify</h1>
+        <h1 className="text-1xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400">Login with YourPrintify</h1>
         <form onSubmit={handleSubmit}>
           {/* Email input */}
           <div className="mb-4">
@@ -88,7 +88,7 @@ const Login = () => {
           {/* Submit button */}
           <button
             type="submit"
-            className={`w-full bg-blue-600 text-white font-semibold py-2 rounded hover:bg-blue-700 transition duration-200 ${formData.loading ? 'cursor-not-allowed opacity-50' : ''}`}
+            className={`w-auto mx-auto bg-black text-white font-semibold py-2 px-6 rounded-full hover:bg-gray-800 transition duration-200 ${formData.loading ? 'cursor-not-allowed opacity-50' : ''}`}
             disabled={formData.loading}
           >
             {formData.loading ? 'Logging in...' : 'Login'}
